@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1c3154" />
+    <meta name="description" content="Encontre caminhos para conseguir uma refeição em São Paulo e organizações relacionadas em outras localidades." />
+    <title>OSC Fácil — encontre ajuda perto de você</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.mjs"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="./" aria-label="OSC Fácil — página inicial"><span class="brand-mark" aria-hidden="true">✳</span> osc<span>fácil</span></a>
+        <span class="header-note">Protótipo público · dados com fonte</span>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="shell hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">ENCONTRE UM CAMINHO</p>
+            <h1>Precisa de comida?<br /><em>Vamos encontrar ajuda.</em></h1>
+            <p class="hero-lede">Comece pelo tipo de apoio e escolha uma localidade. Você pode usar a sua posição ou informar um município. Sem conta.</p>
+            <div class="hero-proof"><span class="proof-dot"></span> Busca por necessidade <span aria-hidden="true">·</span> Fontes visíveis <span aria-hidden="true">·</span> Localização opcional</div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-circle art-circle-one"></div><div class="art-circle art-circle-two"></div>
+            <div class="art-card art-card-back"><span class="art-icon">⌖</span><span>Perto de você</span></div>
+            <div class="art-card art-card-front"><span class="art-icon">♡</span><strong>Ajuda começa<br />com informação</strong><span class="art-line"></span><span class="art-line short"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-section shell" aria-labelledby="search-heading">
+        <div class="search-panel">
+          <div class="panel-heading"><span class="step-badge">01</span><div><p class="eyebrow dark">SUA NECESSIDADE</p><h2 id="search-heading">Que tipo de ajuda você procura?</h2></div></div>
+          <p class="field-hint">Nesta primeira versão, estamos testando a busca por alimentação.</p>
+          <form id="search-form">
+            <fieldset class="choice-group">
+              <legend class="sr-only">Tipo de ajuda com alimentação</legend>
+              <label class="choice"><input type="radio" name="need" value="meal" checked /><span class="choice-icon" aria-hidden="true">🍲</span><span><strong>Uma refeição</strong><small>Comida pronta para comer</small></span><span class="choice-check" aria-hidden="true"></span></label>
+              <label class="choice"><input type="radio" name="need" value="other" /><span class="choice-icon" aria-hidden="true">🥬</span><span><strong>Outros alimentos</strong><small>Cesta, mantimentos ou orientação</small></span><span class="choice-check" aria-hidden="true"></span></label>
+            </fieldset>
+
+            <div class="section-divider"></div>
+            <div class="panel-heading location-heading"><span class="step-badge">02</span><div><p class="eyebrow dark">LOCALIDADE</p><h2>Onde você procura ajuda?</h2></div></div>
+            <div class="location-actions">
+              <button id="gps-button" class="secondary-button" type="button"><span aria-hidden="true">⌖</span> Usar minha localização</button>
+              <span class="or-label">ou</span>
+              <div class="location-entry">
+                <label for="municipality-input" class="sr-only">Digite seu município</label>
+                <input id="municipality-input" type="search" autocomplete="off" placeholder="Digite seu município" aria-controls="municipality-options" aria-expanded="false" />
+                <div id="municipality-options" class="suggestions" role="listbox" hidden></div>
+              </div>
+            </div>
+            <button id="pilot-button" class="text-button" type="button">Usar São Paulo, SP (cidade piloto)</button>
+            <p id="location-status" class="location-status" role="status">Sua posição só será solicitada se você escolher usá-la.</p>
+            <p class="privacy-note">Se usar GPS, sua posição será enviada ao Mapa das OSC somente quando você buscar organizações próximas. A posição não é salva neste protótipo.</p>
+            <button id="submit-button" class="primary-button" type="submit">Encontrar ajuda <span aria-hidden="true">→</span></button>
+          </form>
+        </div>
+      </section>
+
+      <section id="results" class="results shell" aria-labelledby="results-heading" hidden>
+        <div class="results-header"><div><p class="eyebrow dark">RESULTADOS</p><h2 id="results-heading">Opções encontradas</h2><p id="results-context"></p></div><button id="edit-search" class="text-button" type="button">Alterar busca</button></div>
+        <div id="results-message" class="notice" role="status" hidden></div>
+        <div id="verified-section"><div class="list-heading"><div><h3>Ofertas documentadas</h3><p>Informações publicadas pela Prefeitura de São Paulo. Confirme o funcionamento antes de ir.</p></div><span id="verified-count" class="count-pill"></span></div><div id="verified-list" class="card-grid"></div></div>
+        <div id="candidate-section" class="candidate-section"><div class="list-heading"><div><h3>Organizações relacionadas</h3><p>Classificadas pelo Mapa das OSC em assistência social. Essa classificação não confirma que ofereçam alimentação.</p></div></div><div id="candidate-list" class="candidate-list"></div></div>
+      </section>
+
+      <section class="about-strip"><div class="shell about-inner"><span class="about-symbol" aria-hidden="true">✳</span><div><h2>Informação clara ajuda a decidir</h2><p>Este projeto está em construção. Mostramos de onde vêm os dados e distinguimos ofertas documentadas de organizações apenas relacionadas ao tema.</p></div><a href="https://github.com/JJDSNT/osc_facil/tree/main/docs" target="_blank" rel="noopener noreferrer">Conheça a pesquisa <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+    <footer class="site-footer"><div class="shell footer-inner"><span>© OSC Fácil · prova de conceito</span><span>Fonte inicial: <a href="https://mapaosc.ipea.gov.br/" target="_blank" rel="noopener noreferrer">Ipea — Mapa das OSC <span aria-hidden="true">↗</span></a></span></div></footer>
+  </body>
+</html>

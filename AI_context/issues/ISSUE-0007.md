@@ -1,7 +1,7 @@
 ---
 id: ISSUE-0007
 title: "Criar cadastro curado de serviços vinculado às OSCs"
-status: ready
+status: doing
 priority: high
 type: feature
 owner: unassigned
@@ -16,6 +16,8 @@ related_files:
   - docs/ask-izzy.md
   - docs/mapa-das-osc.md
   - docs/proximos-passos.md
+  - docs/poc-alimentacao.md
+  - app/data/services.json
 ---
 
 # Resumo
@@ -33,13 +35,14 @@ Manter serviços curados, vinculados a OSCs quando possível, com local de atend
 # O que foi feito
 
 - Lacuna e campos candidatos descritos em [`docs/ask-izzy.md`](../../docs/ask-izzy.md).
+- Três unidades publicadas pela Prefeitura de São Paulo ligadas a fichas do Mapa por nome e endereço. Fonte, datas e estado de evidência registrados em [`services.json`](../../app/data/services.json).
 
 # O que falta
 
 - Definir esquema separado para organização, serviço e local; vincular por `id_osc` sem exigir que todo serviço tenha o mesmo endereço da sede.
 - Definir estados de verificação, fonte/evidência, datas de confirmação e revisão, e critério de retirada.
 - Selecionar cidade/necessidade da POC a partir de uma amostra que possa ser confirmada.
-- Curar manualmente um pequeno conjunto inicial, evitando publicar informação de atendimento não validada.
+- Confirmar diretamente horários, canal de contato e regras de acesso das três unidades iniciais.
 - Registrar processo de correção e reconfirmação adequado ao MVP.
 
 # Decisões
@@ -50,7 +53,7 @@ Manter serviços curados, vinculados a OSCs quando possível, com local de atend
 # Critérios de aceite
 
 - [ ] Organização, serviço e local de atendimento são entidades distintas no contrato de dados.
-- [ ] Cada serviço publicado tem evidência, fonte, data e estado de verificação.
+- [x] Cada oferta publicada tem evidência, fonte, data e estado de documentação pública.
 - [ ] Amostra inicial da POC possui canal de contato e forma de acesso conferidos.
 - [ ] Existe caminho documentado para corrigir, reconfirmar e retirar uma entrada.
 
@@ -61,3 +64,4 @@ A seleção de serviços deve considerar os termos do Mapa das OSC e os limites 
 # Log de execução
 
 - 2026-09-26 — Issue aberta após comparação entre Ask Izzy e Mapa das OSC.
+- 2026-09-26 — Cadastro inicial de três unidades da Rede Cozinha Escola criado; rótulo evita sugerir confirmação direta da oferta atual.

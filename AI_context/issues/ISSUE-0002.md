@@ -1,7 +1,7 @@
 ---
 id: ISSUE-0002
 title: "Validar busca, paginação e caminho de ingestão"
-status: ready
+status: doing
 priority: high
 type: research
 owner: unassigned
@@ -15,6 +15,8 @@ blockers: []
 related_files:
   - docs/mapa-das-osc.md
   - docs/proximos-passos.md
+  - docs/poc-alimentacao.md
+  - app/mapa-api.mjs
 ---
 
 # Resumo
@@ -32,6 +34,7 @@ Documentar um contrato de consulta que permita resultados limitados, tratamento 
 # O que foi feito
 
 - Endpoints iniciais e tamanho de uma resposta geográfica registrados em [`ISSUE-0001`](ISSUE-0001.md).
+- Busca avançada limitada a oito registros, autocomplete e lista de cinco OSCs próximas funcionaram na instância e no navegador; contrato adotado em [`docs/poc-alimentacao.md`](../../docs/poc-alimentacao.md).
 
 # O que falta
 
@@ -43,11 +46,11 @@ Documentar um contrato de consulta que permita resultados limitados, tratamento 
 
 # Decisões
 
-Nenhum modo de ingestão foi escolhido ainda.
+Para a POC, consulta direta à API no navegador e três ofertas curadas em JSON local. Importação e cache continuam em avaliação para o MVP.
 
 # Critérios de aceite
 
-- [ ] Rotas e parâmetros de busca validados contra a instância pública.
+- [x] Rotas e parâmetros de busca usados pela POC validados contra a instância pública.
 - [ ] Consulta limitada demonstrada para dois portes de município.
 - [ ] Campos, ausências, falhas e atualização documentados.
 - [ ] Caminho de dados escolhido com registro da avaliação dos termos de uso.
@@ -59,3 +62,4 @@ Não baixar a base principal inteira apenas para testar o esquema; começar pelo
 # Log de execução
 
 - 2026-09-26 — Issue aberta a partir das lacunas da pesquisa inicial.
+- 2026-09-26 — Busca paginada e rota por GPS integradas ao protótipo; validação de dois portes e termos para escala permanece aberta.

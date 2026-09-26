@@ -4,18 +4,18 @@ Memória operacional do projeto. Este diretório registra problemas, decisões, 
 
 ## Estado atual
 
-O repositório está em pesquisa inicial; ainda não há aplicação. O [README principal](../README.md) define a proposta. A investigação do Mapa das OSC, feita em 2026-09-26, está em [`ISSUE-0001`](issues/ISSUE-0001.md) e em [`docs/mapa-das-osc.md`](../docs/mapa-das-osc.md).
+Há um [protótipo de alimentação](../app/) para São Paulo, com GPS opcional, busca por município e três ofertas documentadas em fonte pública. A implementação e seus limites estão em [`docs/poc-alimentacao.md`](../docs/poc-alimentacao.md). A investigação do Mapa das OSC está em [`ISSUE-0001`](issues/ISSUE-0001.md) e em [`docs/mapa-das-osc.md`](../docs/mapa-das-osc.md).
 O objetivo de reproduzir a jornada de descoberta do Ask Izzy, com uma camada brasileira de serviços vinculados a OSCs, está documentado em [`docs/ask-izzy.md`](../docs/ask-izzy.md).
 
 | Issue | Estado | Assunto |
 | --- | --- | --- |
 | [ISSUE-0001](issues/ISSUE-0001.md) | done | Investigar código, API pública e dados do Mapa das OSC |
-| [ISSUE-0002](issues/ISSUE-0002.md) | ready | Validar busca, paginação e caminho de ingestão |
-| [ISSUE-0003](issues/ISSUE-0003.md) | backlog | Definir relação entre necessidades e dados verificáveis |
-| [ISSUE-0004](issues/ISSUE-0004.md) | backlog | Construir prova de conceito de busca por município |
+| [ISSUE-0002](issues/ISSUE-0002.md) | doing | Validar busca, paginação e caminho de ingestão |
+| [ISSUE-0003](issues/ISSUE-0003.md) | doing | Definir relação entre necessidades e dados verificáveis |
+| [ISSUE-0004](issues/ISSUE-0004.md) | doing | Construir prova de conceito de busca por município e GPS |
 | [ISSUE-0005](issues/ISSUE-0005.md) | backlog | Avaliar qualidade dos resultados com uma amostra real |
 | [ISSUE-0006](issues/ISSUE-0006.md) | done | Pesquisar Ask Izzy e definir referência para POC/MVP |
-| [ISSUE-0007](issues/ISSUE-0007.md) | ready | Criar cadastro curado de serviços vinculado às OSCs |
+| [ISSUE-0007](issues/ISSUE-0007.md) | doing | Criar cadastro curado de serviços vinculado às OSCs |
 
 ## Fluxo
 

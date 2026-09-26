@@ -38,7 +38,7 @@ curl --fail --silent --show-error \
   'https://mapaosc.ipea.gov.br/api/api/busca/municipio/Sao%20Paulo'
 ```
 
-O código também define `GET /api/lista_por_area_atuacao/{area}/municipio/{municipio}` e `GET /api/osc/busca_avancada/{type_result}/{limit}/{offset}`. Essas rotas **não foram validadas na instância** nesta pesquisa; confirmar parâmetros, paginação e formato antes de adotá-las. A tentativa de `GET /api/api/cnpj/14376301000129` expirou após 25 segundos, portanto não há conclusão sobre essa rota. Todas as chamadas acima foram sem autenticação. Não inferir garantias de disponibilidade, limites de uso ou estabilidade do contrato a partir de uma resposta 200.
+Na etapa de construção da POC, `POST /osc/busca_avancada/lista/8/0` com código IBGE `3550308` e filtro `cd_area_atuacao-5` respondeu com oito OSCs. `GET /lista_por_area_atuacao/5/-23.53330/-46.64400` respondeu com cinco OSCs próximas; o [repositório da API](https://github.com/Plataformas-Cidadania/mapa-osc-api) usa `ST_Distance` para ordenação dessa consulta. O navegador conseguiu chamar ambas as rotas diretamente em 2026-09-26. O contrato adotado está em [POC de alimentação](poc-alimentacao.md). Ainda não foram validados paginação completa, dois portes de município nem limites operacionais da API. A tentativa de `GET /api/api/cnpj/14376301000129` expirou após 25 segundos, portanto não há conclusão sobre essa rota. Todas as chamadas foram sem autenticação. Não inferir garantias de disponibilidade ou estabilidade do contrato a partir de uma resposta 200.
 
 ## Base para download
 
@@ -58,7 +58,7 @@ Os [termos do portal, versão 2025-03-20](https://mapaosc.ipea.gov.br/termosuso)
 
 ## O que ainda precisa de verificação
 
-- Semântica e limites das rotas de busca por área, busca avançada e paginação.
+- Paginação, cobertura, semântica e limites operacionais das rotas de busca por área e busca avançada.
 - Cobertura, precisão e atualização dos endereços e coordenadas numa amostra de diferentes municípios.
 - Campos do CSV e seu dicionário na edição que será usada.
 - Regras atuais de atribuição, cache e republicação aplicáveis ao produto planejado.

@@ -1,7 +1,7 @@
 ---
 id: ISSUE-0003
 title: "Definir relação entre necessidades e dados verificáveis"
-status: backlog
+status: doing
 priority: high
 type: research
 owner: unassigned
@@ -16,6 +16,8 @@ related_files:
   - README.md
   - docs/mapa-das-osc.md
   - docs/proximos-passos.md
+  - docs/poc-alimentacao.md
+  - app/domain.mjs
 ---
 
 # Resumo
@@ -33,6 +35,7 @@ Criar um conjunto inicial de categorias e uma política clara para exibir result
 # O que foi feito
 
 - Limitação conceitual documentada em [`ISSUE-0001`](ISSUE-0001.md).
+- POC separa ofertas de refeição documentadas pela Prefeitura de OSCs apenas classificadas em assistência social; “outros alimentos” não apresenta oferta inventada.
 
 # O que falta
 
@@ -60,3 +63,4 @@ Esta issue pode avançar em paralelo à validação técnica de `ISSUE-0002`.
 
 - 2026-09-26 — Issue aberta a partir das limitações identificadas na pesquisa.
 - 2026-09-26 — Escopo ajustado após pesquisa do Ask Izzy em `ISSUE-0006`.
+- 2026-09-26 — Alimentação escolhida para a POC; rótulos “Oferta documentada” e “Organizações relacionadas” aplicados na interface.

@@ -2,14 +2,14 @@
 
 ## Objetivo da primeira prova de conceito
 
-Provar uma jornada funcional inspirada no [Ask Izzy](ask-izzy.md): **necessidade → refinamento curto → município → serviço confirmado → como obter ajuda**. Começar por uma cidade e uma necessidade com organizações identificáveis no Mapa das OSC e serviços passíveis de confirmação. O resultado principal deve representar serviços curados; OSCs apenas relacionadas podem aparecer em seção separada, sem promessa de atendimento.
+Provar uma jornada funcional inspirada no [Ask Izzy](ask-izzy.md): **necessidade → refinamento curto → município ou GPS → oferta documentada → fonte e local**. O recorte já implementado é alimentação em São Paulo, com [três entradas da Rede Cozinha Escola](poc-alimentacao.md). Confirmação direta de horários, contatos e regras de acesso ainda é necessária para chegar a serviços confirmados. OSCs apenas relacionadas aparecem em seção separada, sem promessa de atendimento.
 
 ## Sequência de trabalho
 
-1. **Validar o contrato do Mapa** ([ISSUE-0002](../AI_context/issues/ISSUE-0002.md)). Testar busca limitada e campos da fonte; escolher consulta ao vivo ou importação reduzida após conferir termos de uso.
-2. **Escolher a necessidade inicial** ([ISSUE-0003](../AI_context/issues/ISSUE-0003.md)). Criar uma pergunta de refinamento apenas se existir evidência correspondente no cadastro de serviços.
-3. **Criar uma camada de serviços** ([ISSUE-0007](../AI_context/issues/ISSUE-0007.md)). Modelo mínimo separado para organização, serviço e local de atendimento; curar manualmente as primeiras entradas, com fonte, data, estado de verificação e forma de acesso.
-4. **Construir a jornada** ([ISSUE-0004](../AI_context/issues/ISSUE-0004.md)). Necessidade, refinamento, município, lista e detalhe com contato e origem. Sem cadastro ou permissão de localização obrigatórios.
+1. **Ampliar a validação do contrato do Mapa** ([ISSUE-0002](../AI_context/issues/ISSUE-0002.md)). A consulta pequena já funciona; testar dois portes de município, paginação, termos de uso e estabilidade antes de definir estratégia de dados para o MVP.
+2. **Completar a taxonomia** ([ISSUE-0003](../AI_context/issues/ISSUE-0003.md)). Alimentação é a necessidade piloto; validar outras necessidades apenas quando houver evidência de serviço.
+3. **Confirmar e manter serviços** ([ISSUE-0007](../AI_context/issues/ISSUE-0007.md)). Separar organização, serviço e local de atendimento no modelo futuro; confirmar canais, horários e regras de acesso com as unidades; definir revisão e retirada.
+4. **Aprimorar a jornada** ([ISSUE-0004](../AI_context/issues/ISSUE-0004.md)). A interface inicial usa município ou GPS opcional; revisar por teclado e com pessoas usuárias, melhorar detalhe de serviço e alternativas quando faltarem dados.
 5. **Validar qualidade** ([ISSUE-0005](../AI_context/issues/ISSUE-0005.md)). Revisar falso positivo, contato inválido, local inadequado e comportamento para nenhum resultado confirmado.
 
 ## Critérios de aceite da prova de conceito
@@ -23,7 +23,7 @@ Provar uma jornada funcional inspirada no [Ask Izzy](ask-izzy.md): **necessidade
 
 ## Decisões abertas
 
-- Qual cidade e necessidade têm dados suficientes para a POC? A escolha deve vir de uma amostra verificada.
+- São Paulo e alimentação foram escolhidos para a POC; resta comprovar a qualidade operacional das três unidades e avaliar ampliação geográfica.
 - O produto será apenas gratuito e informativo, ou haverá algum uso comercial? Isso afeta a avaliação dos termos do fornecedor.
 - Quem fará a confirmação e reconfirmação de serviços, horários e elegibilidade no MVP?
 
