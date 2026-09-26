@@ -17,7 +17,7 @@ A hipótese de uma segunda etapa para registrar entregas e avaliar a SUAScoin es
 | [ISSUE-0005](issues/ISSUE-0005.md) | backlog | Avaliar qualidade dos resultados com uma amostra real |
 | [ISSUE-0006](issues/ISSUE-0006.md) | done | Pesquisar Ask Izzy e definir referência para POC/MVP |
 | [ISSUE-0007](issues/ISSUE-0007.md) | doing | Criar cadastro curado de serviços vinculado às OSCs |
-| [ISSUE-0008](issues/ISSUE-0008.md) | ready | Validar comprovação de entrega e hipótese SUAScoin |
+| [ISSUE-0008](issues/ISSUE-0008.md) | ready | Validar pagamento em SUAScoin, entrega e resgate futuro |
 
 ## Fluxo
 

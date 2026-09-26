@@ -21,7 +21,7 @@ Necessidade → refeição ou outros alimentos → município ou GPS → oferta 
 
 **MVP:** ampliar para duas ou três necessidades e localidades com cobertura declarada, manter um processo de inclusão/correção/reconfirmação dos serviços e validar os resultados com pessoas que buscam ajuda e com organizações. A ampliação depende da qualidade das informações, não apenas do número de OSCs cadastradas.
 
-**Segunda etapa proposta:** [SUAScoin](docs/suascoin.md) estuda como registrar e auditar a entrega efetiva de produtos e serviços. A pessoa atendida confirmaria o recebimento e autorizaria a mudança de titularidade de um ativo digital atribuído a ela para a oferta. É um conceito de pesquisa, sem moeda emitida nem integração oficial ao SUAS.
+**Segunda etapa proposta:** [SUAScoin](docs/suascoin.md) estuda uma moeda digital para pagar produtos e serviços na rede participante. Depois de receber, a pessoa pagaria com seu saldo; a organização receberia as unidades e poderia solicitar resgate futuro por um mecanismo ligado a repasses e prestação de contas. É um conceito de pesquisa, sem moeda emitida nem integração oficial ao SUAS.
 
 ## Estado do projeto
 
