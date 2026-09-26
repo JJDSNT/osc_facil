@@ -21,6 +21,8 @@ Necessidade → refeição ou outros alimentos → município ou GPS → oferta 
 
 **MVP:** ampliar para duas ou três necessidades e localidades com cobertura declarada, manter um processo de inclusão/correção/reconfirmação dos serviços e validar os resultados com pessoas que buscam ajuda e com organizações. A ampliação depende da qualidade das informações, não apenas do número de OSCs cadastradas.
 
+**Segunda etapa proposta:** [SUAScoin](docs/suascoin.md) estuda como registrar e auditar a entrega efetiva de produtos e serviços. A pessoa atendida confirmaria o recebimento e autorizaria a mudança de titularidade de um ativo digital atribuído a ela para a oferta. É um conceito de pesquisa, sem moeda emitida nem integração oficial ao SUAS.
+
 ## Estado do projeto
 
 **Protótipo funcional, ainda em validação.** Há uma interface estática em [`app/`](app/) com busca por município ou GPS opcional, resultados com proveniência e estados de erro e ausência. A consulta ao Mapa das OSC é feita diretamente pelo navegador e depende da disponibilidade da API pública. A localização obtida pelo GPS não é armazenada pelo protótipo; ao buscar, as coordenadas são enviadas ao Mapa das OSC para consultar OSCs próximas.
@@ -45,4 +47,5 @@ node --test app/domain.test.mjs
 - [Pesquisa do Mapa das OSC](docs/mapa-das-osc.md): código fonte, API pública, dados e limitações.
 - [Plano de próximos passos](docs/proximos-passos.md): sequência de trabalho e critérios de aceite.
 - [POC de alimentação](docs/poc-alimentacao.md): recorte, fontes, GPS, contrato dos dados e limites.
+- [SUAScoin](docs/suascoin.md): hipótese de comprovação de entrega, papel da moeda e condições para um piloto.
 - [AI_context](AI_context/README.md): histórico de issues com frontmatter, decisões e trabalho pendente.

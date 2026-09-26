@@ -6,6 +6,7 @@ Memória operacional do projeto. Este diretório registra problemas, decisões, 
 
 Há um [protótipo de alimentação](../app/) para São Paulo, com GPS opcional, busca por município e três ofertas documentadas em fonte pública. A implementação e seus limites estão em [`docs/poc-alimentacao.md`](../docs/poc-alimentacao.md). A investigação do Mapa das OSC está em [`ISSUE-0001`](issues/ISSUE-0001.md) e em [`docs/mapa-das-osc.md`](../docs/mapa-das-osc.md).
 O objetivo de reproduzir a jornada de descoberta do Ask Izzy, com uma camada brasileira de serviços vinculados a OSCs, está documentado em [`docs/ask-izzy.md`](../docs/ask-izzy.md).
+A hipótese de uma segunda etapa para registrar entregas e avaliar a SUAScoin está em [`docs/suascoin.md`](../docs/suascoin.md) e [`ISSUE-0008`](issues/ISSUE-0008.md).
 
 | Issue | Estado | Assunto |
 | --- | --- | --- |
@@ -16,6 +17,7 @@ O objetivo de reproduzir a jornada de descoberta do Ask Izzy, com uma camada bra
 | [ISSUE-0005](issues/ISSUE-0005.md) | backlog | Avaliar qualidade dos resultados com uma amostra real |
 | [ISSUE-0006](issues/ISSUE-0006.md) | done | Pesquisar Ask Izzy e definir referência para POC/MVP |
 | [ISSUE-0007](issues/ISSUE-0007.md) | doing | Criar cadastro curado de serviços vinculado às OSCs |
+| [ISSUE-0008](issues/ISSUE-0008.md) | ready | Validar comprovação de entrega e hipótese SUAScoin |
 
 ## Fluxo
 
