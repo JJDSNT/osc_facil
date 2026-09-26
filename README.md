@@ -41,6 +41,10 @@ Abra `http://localhost:8000/app/`. A página precisa de conexão com a API do Ma
 node --test app/domain.test.mjs
 ```
 
+## Versão pública
+
+O protótipo é publicado automaticamente pelo [GitHub Pages](https://jjdsnt.github.io/osc_facil/) a partir de [`app/`](app/) quando há mudanças no aplicativo em `main`.
+
 ## Documentação
 
 - [Pesquisa do Ask Izzy](docs/ask-izzy.md): jornada de referência, diferenças de dados e recorte de POC/MVP.
